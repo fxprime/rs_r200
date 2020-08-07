@@ -1,0 +1,13 @@
+<launch>
+    <param name="TERMINAL_VISUALIZATION" value="false" />
+    <param name="LR_EMITTER_ENABLED" value="true" />
+    <param name="LR_AUTO_EXPOSURE_ENABLED" value="false" />
+    <param name="LR_EXPOSURE" value="200" /> <!-- indoor 200 outdoor night 400 sunlight 7 -->
+    <param name="LR_GAIN" value="200" />
+    <param name="REALSENSE_ENABLE" value = "true" />
+    <param name="RANGE_TO_AVOID" value="1.0" />
+    <param name="MIN_AGL_AVOID" value="0.5" />
+<node name="VISION" pkg="rs_r200" type="nodelet" output="screen" respawn="true" >
+
+    </node> 
+</launch>
